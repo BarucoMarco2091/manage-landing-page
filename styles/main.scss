@@ -1,0 +1,195 @@
+@import '../styles/variables.scss';
+
+main {
+    margin-top: 10dvh;
+
+    .container {
+        display: flex;
+        max-width: 1240px;
+        margin: auto;
+
+        div {
+            flex: 1;
+            margin-bottom: 14dvh;
+        }
+
+        h1 {
+            color: $darkBlue;
+            margin-bottom: 5dvh;
+            font-size: 3rem;
+        }
+
+        p {
+            color: $darkGrayishBlue;
+            margin-bottom: 5dvh;
+            line-height: 1.8rem;
+        }
+
+        button {
+            height: 6dvh;
+            width: 19dvh;
+            border-radius: 3dvh;
+            border: none;
+            background-color: $brightRed;
+            color: $veryPaleRed;
+            transition: opacity 0.8s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "card-0 card-1"
+            ".      card-2"
+            ".      card-3";
+        max-width: 1240px;
+        margin: auto;
+
+        .card-0 {
+            grid-area: card-0;
+        }
+
+        .card-1 {
+            grid-area: card-1;
+        }
+
+        .card-2 {
+            grid-area: card-2;
+        }
+
+        .card-3 {
+            grid-area: card-3;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 4dvh;
+            color: $darkBlue;
+        }
+
+        .card-description {
+            display: flex;
+            margin-top: 3dvh;
+
+            .size {
+                background-color: $brightRed;
+                width: 8dvh;
+                height: 7dvh;
+                margin-right: 3dvh;
+                margin-bottom: 3dvh;
+                border-radius: 3dvh;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: $veryLightGray;
+            }
+
+            .explanation {
+                color: $veryDarkBlue;
+            }
+        }
+
+        .card-paragraph p {
+            color: $darkGrayishBlue;
+            line-height: 1.8rem;
+        }
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 14dvh;
+        margin-bottom: 10dvh;
+        font-size: 2.2rem;
+        color: $darkBlue;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1240px;
+        margin: auto;
+        gap: 3dvh;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: $veryLightGray;
+            text-align: center;
+            height: 30dvh;
+
+            .name {
+                color: $darkBlue;
+            }
+
+            p {
+                padding-bottom: 3dvh;
+                color: $darkGrayishBlue;
+                line-height: 1.4rem;
+            }
+
+            img {
+                width: 7dvh;
+                position: relative;
+                margin: auto;
+                bottom: 4dvh;
+            }
+        }
+    }
+
+    .btn-started {
+        display: flex;
+        justify-content: center;
+        margin-top: 10dvh;
+        margin-bottom: 15dvh;
+
+        button {
+            height: 5dvh;
+            width: 18dvh;
+            border-radius: 3dvh;
+            border: none;
+            background-color: $brightRed;
+            color: $veryPaleRed;
+            transition: opacity 0.8s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .simplify {
+        display: flex;
+        background-color: $brightRed;
+        background-image: url('../assets/bg-simplify-section-desktop.svg');
+        height: 24dvh;
+        justify-content: space-between;
+
+        div {
+            max-width: 1240px;
+            margin: auto;
+
+            h4 {
+                color: $veryLightGray;
+                font-size: 2rem;
+            }
+
+            .get-started-btn {
+                height: 5dvh;
+                width: 18dvh;
+                border: none;
+                border-radius: 3dvh;
+                color: $brightRed;
+                background-color: $veryLightGray;
+                transition: opacity 0.8s;
+            }
+
+            .get-started-btn:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

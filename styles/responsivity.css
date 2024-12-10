@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex !important;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-btn button {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #mobile_btn {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2dvh;
+  }
+  .container div {
+    margin-bottom: 2dvh;
+  }
+  .container h1 {
+    margin: 2dvh 2dvh;
+    font-size: 2.3rem !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-areas: "card-0" "card-1" "card-2" "card-3" !important;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-areas: "card-0" "card-1" "card-2" "card-3" !important;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn-started button {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .simplify {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .nav-list {
+    display: none;
+  }
+}/*# sourceMappingURL=responsivity.css.map */

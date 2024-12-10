@@ -1,0 +1,83 @@
+@import '../styles/variables.scss';
+
+@keyframes scale {
+    from {
+        transform: translateY(0) scale(1);
+    }
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+footer {
+    background-color: $veryDarkBlue;
+    padding: 3dvh;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1240px;
+        margin: auto;
+        
+        .footer-logo {
+            color: $veryPaleRed;
+
+            img {
+                margin-bottom: 3dvh;
+            }
+
+            i {
+                margin-right: 3dvh;
+                transition: color 0.7s;
+            }
+
+            i:hover {
+                color: $brightRed;
+                animation: scale 1s infinite alternate;
+            }
+        }
+
+        div {
+
+            ul {
+                list-style-type: none;
+
+                li {
+                    margin-bottom: 2dvh;
+            
+                    a {
+                        color: $veryPaleRed;
+                        transition: color 0.8s;
+                    }
+
+                    a:hover {
+                        color: $brightRed;
+                    }
+                }
+            }
+        }
+
+        div {
+            #email {
+                height: 6dvh;
+                border-radius: 3dvh;
+                border: none;
+                text-align: center;
+            }
+
+            .go-btn{
+                height: 5dvh;
+                width: 8dvh;
+                border-radius: 3dvh;
+                border: none;
+                background-color: $brightRed;
+                color: $veryPaleRed;
+                transition: opacity 0.8s;
+            }
+
+            .go-btn:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
